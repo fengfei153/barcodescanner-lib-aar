@@ -823,7 +823,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       statusView.setText(R.string.msg_default_status);
     }
 
-    statusView.setVisibility(View.VISIBLE);
+    //statusView.setVisibility(View.VISIBLE);
     viewfinderView.setVisibility(View.VISIBLE);
     lastResult = null;
 

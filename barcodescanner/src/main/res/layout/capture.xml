@@ -199,7 +199,8 @@
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/transparent"
             android:text="@string/msg_default_status"
-            android:textColor="@color/status_text"/>
+            android:textColor="@color/status_text"
+            android:visibility="gone"/>
 
   <Button android:id="@+id/flip_button"
           android:layout_width="wrap_content"
@@ -217,11 +218,10 @@
           android:drawableStart="@drawable/toggle_torch"
           android:visibility="invisible"/>
 
-  <Button
-      android:id="@+id/cancel_button"
-      android:layout_width="fill_parent"
-      android:layout_height="40dip"
-      android:layout_gravity="bottom|center_horizontal"
-      android:text="@string/button_cancel" />
+  <Button android:id="@+id/cancel_button"
+          android:layout_width="fill_parent"
+          android:layout_height="48dip"
+          android:text="@string/button_cancel"
+          android:layout_gravity="bottom|center_horizontal"/>
 
 </merge>
