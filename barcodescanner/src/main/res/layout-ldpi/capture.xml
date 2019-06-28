@@ -218,9 +218,8 @@
 
   <Button android:id="@+id/cancel_button"
           android:layout_width="fill_parent"
-          android:layout_height="48dip"
+          android:layout_height="50dip"
           android:text="@string/button_cancel"
-          android:background="@color/encode_view"
           android:layout_gravity="bottom|center_horizontal"/>
 
 </merge>
