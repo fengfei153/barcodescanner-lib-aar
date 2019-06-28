@@ -110,6 +110,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
   private TextView statusView;
   private Button flipButton;
   private Button torchButton;
+  private Button cancelButton;
   private View resultView;
   private Result lastResult;
   private boolean hasSurface;
@@ -193,6 +194,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     statusView = (TextView) findViewById(R.id.status_view);
     flipButton = (Button) findViewById(R.id.flip_button);
     torchButton = (Button) findViewById(R.id.torch_button);
+    cancelButton = (Button) findViewById(R.id.cancel_button);
 
     handler = null;
     lastResult = null;
@@ -859,6 +861,12 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         }
       }
     }
+    cancelButton.setOnClickListener(new Button.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        onKeyDown(KeyEvent.KEYCODE_BACK, null);
+      }
+    });
   }
 
   public void drawViewfinder() {
